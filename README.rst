@@ -15,7 +15,7 @@ Then add the library into ``INSTALLED_APPS`` within Django's project ``settings.
 
     INSTALLED_APPS = (
         ...
-        'gevent_deploy',
+        'django_gevent_deploy',
     )
 
 Configuration
@@ -23,21 +23,25 @@ Configuration
 
 You may add two settings to your ``settings.py``:
 
-:``GEVENT_ADDR_PORT``:
-    Specifies what address and what port should be used for the gevent's WSGI server.
-    Must be a string and of the ``[[addr:]port]`` format::
+``GEVENT_ADDR_PORT``
+~~~~~~~~~~~~~~~~~~~~
 
-        8000              # default
-        localhost:8000
-        127.0.0.1:8000
+Specifies what address and what port should be used for the gevent's WSGI server.
+Must be a string and of the ``[[addr:]port]`` format::
 
-:``GEVENT_POOL_SIZE``:
-    Specifies the number of greenlets gevent can spawn for the server. Can be ``None``
-    or an integer value::
+    8000              # default
+    localhost:8000
+    127.0.0.1:8000
 
-        None              # default
-        1
-        100
+``GEVENT_POOL_SIZE``
+~~~~~~~~~~~~~~~~~~~~
+
+Specifies the number of greenlets gevent can spawn for the server. Can be ``None``
+or an integer value::
+
+    None              # default
+    1
+    100
 
 Usage
 -----
