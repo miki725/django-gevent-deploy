@@ -49,7 +49,7 @@ Usage
 To start the gevent's WSGI server, simply call ``rungevent`` in ``manage.py``. The command
 accepts optional argumets which are the same as described in `Configuration`_ section.
 If the arguments are not provided, then the configuration from the ``settings.py`` is used,
-or default if ``settings.py`` is not configured.
+or default if ``settings.py`` is not configured::
 
     $ python manage.py rungevent [[addr]:port] [pool_size]
 
