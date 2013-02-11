@@ -27,11 +27,11 @@ You may add two settings to your ``settings.py``:
 ~~~~~~~~~~~~~~~~~~~~
 
 Specifies what address and what port should be used for the gevent's WSGI server.
-Must be a string and of the ``[[addr:]port]`` format::
+Must be a **string** and of the ``[[addr:]port]`` format::
 
-    8000              # default
-    localhost:8000
-    127.0.0.1:8000
+    '8000'            # default
+    'localhost:8000'
+    '127.0.0.1:8000'
 
 ``GEVENT_POOL_SIZE``
 ~~~~~~~~~~~~~~~~~~~~
