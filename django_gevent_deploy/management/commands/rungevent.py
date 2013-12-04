@@ -1,3 +1,4 @@
+from gevent import monkey; monkey.patch_all()
 from django.conf import settings
 from django.core.management.base import BaseCommand, CommandError
 from django.core.servers.basehttp import get_internal_wsgi_application
