@@ -80,7 +80,7 @@ setup(
     author           = __author__,
     author_email     = "miroslav@miki725.com",
     description      = ("Django manage.py hook for starting gevent's WSGI server"),
-    long_description = read('README.rst'),
+    long_description = read('README.rst') + read('CHANGELOG.rst'),
     license          = "MIT",
     keywords         = "django",
     url              = "https://github.com/miki725/django-gevent-deploy",
