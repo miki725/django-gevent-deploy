@@ -1,6 +1,9 @@
 Gevent Deploy
 =============
 
+.. image:: https://badge.fury.io/py/django-gevent-deploy.png
+    :target: http://badge.fury.io/py/django-gevent-deploy
+
 This library adds a simple hook into Django's ``manage.py`` to be able to start gevent's WSGI
 server to serve the Django project.
 
