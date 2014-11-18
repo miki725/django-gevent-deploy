@@ -60,6 +60,7 @@ Credits
 -------
 
 * Miroslav Shubernetskiy
+* Alex Rothberg
 
 License
 -------

@@ -39,7 +39,7 @@ class Command(BaseCommand):
             except ValueError:
                 raise CommandError('Spawn pool size must be an integer')
         else:
-            pool = None
+            pool = 'default'
 
         wsgi_application = get_internal_wsgi_application()
         wsgi.WSGIServer((addr, port), wsgi_application, spawn=pool).serve_forever()
