@@ -7,6 +7,8 @@ Gevent Deploy
 This library adds a simple hook into Django's ``manage.py`` to be able to start gevent's WSGI
 server to serve the Django project.
 
+**NOTE**: Only Django<1.7 is currently supported.
+
 Install
 -------
 
