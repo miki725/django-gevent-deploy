@@ -93,7 +93,7 @@ class Command(BaseCommand):
 
             if not private_key:
                 raise CommandError(
-                    'You must specify certificate in order to use HTTPS server.'
+                    'You must specify private key in order to use HTTPS server.'
                 )
 
             if not options.get('insecure'):
@@ -102,7 +102,7 @@ class Command(BaseCommand):
                     'using django-gevent-deploy even though it is probably insecure? '
                     '[NO/yes]: '
                 )
-                if raw_input(msg).lower() not in ['y', 'yes']:
+                if raw_input(msg).lower() not in ('y', 'yes'):
                     raise CommandError(
                         'You cannot run HTTPS server without explicitly acknowledging '
                         'that doing so is probably insecure!'
